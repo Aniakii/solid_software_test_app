@@ -1,10 +1,10 @@
 # solid_software_test_app
 
-## App demo:
+## App demo
 
 [Screen_recording_20260316_145601.webm](https://github.com/user-attachments/assets/2015e94e-454d-439c-b8e8-debd548bee44)
 
-## App's features:
+## App's features
 
 ### Required features:
 - Text "Hello there" in the middle of the screen
