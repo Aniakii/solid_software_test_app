@@ -7,11 +7,11 @@
 ## App's features
 
 ### Required features:
-- Text "Hello there" in the middle of the screen
-- Background color changes to random color on tap on the screen
+- Displaying text "Hello there" in the middle of the screen
+- Changing background color to random color when tapping anywhere on the screen
 
 ### Additional features:
 - Smooth transition between color changes
-- Adjusting text color to contrast background's color
-- Calculating color values to diffrent color systems (HSL and CMYK)
-- Displaying color values in three color systems (RGB, HSL and CMYK) on the screen
+- Adjusting dynamically text color to contrast background's color
+- Converting color values to different color systems (HSL and CMYK)
+- Displaying color values in three formats (RGB, HSL and CMYK) on the screen
