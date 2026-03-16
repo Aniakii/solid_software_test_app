@@ -1,17 +1,17 @@
 # solid_software_test_app
 
-A new Flutter project.
+## App demo:
 
-## Getting Started
+[Screen_recording_20260316_145601.webm](https://github.com/user-attachments/assets/2015e94e-454d-439c-b8e8-debd548bee44)
 
-This project is a starting point for a Flutter application.
+## App's features:
 
-A few resources to get you started if this is your first Flutter project:
+### Required features:
+- Text "Hello there" in the middle of the screen
+- Background color changes to random color on tap on the screen
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Additional features:
+- Smooth transition between color changes
+- Adjusting text color to contrast background's color
+- Calculating color values to diffrent color systems (HSL and CMYK)
+- Displaying color values in three color system (RGB, HSL and CMYK) on the screen
