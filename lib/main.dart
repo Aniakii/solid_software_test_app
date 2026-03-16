@@ -5,12 +5,12 @@ import 'package:solid_software_test_app/color_converter.dart';
 import 'package:solid_software_test_app/color_system_widget.dart';
 
 /// Value of black color in RGB pallet
-const lowerBorderValue = 0xFF000000;
+const _lowerBorderValue = 0xFF000000;
 
 /// 16 777 216 decimal value in hexadecimal system
 /// (number of possible colors to generate)
 /// 0x00FFFFFF + 1
-const topBorderValue = 0x1000000;
+const _topBorderValue = 0x1000000;
 
 void main() {
   runApp(const Main());
@@ -43,7 +43,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Color _backgroundColor = Colors.white;
 
   void _drawColor() {
-    final newColor = lowerBorderValue + _generator.nextInt(topBorderValue);
+    final newColor = _lowerBorderValue + _generator.nextInt(_topBorderValue);
     setState(() {
       _backgroundColor = Color(newColor);
     });

@@ -3,19 +3,19 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 
 /// Maximum value of single color in RGB system
-const maxRGBValue = 255;
+const _maxRGBValue = 255;
 
 /// Value to normalize percentage numbers
-const maxPercentageValue = 100;
+const _maxPercentageValue = 100;
 
 /// Threshold for choosing color for the displayed text
-const colorContrastThreshold = 0.2;
+const _colorContrastThreshold = 0.2;
 
 /// Class that handles converting color's values between different systems
 extension ColorConverter on Color {
   /// Converts RGB color value to 8 bit value
   int convertTo8bit(double colorValue) {
-    return (colorValue * maxRGBValue).round().clamp(0, maxRGBValue);
+    return (colorValue * _maxRGBValue).round().clamp(0, _maxRGBValue);
   }
 
   /// Converts RGB to HSL
@@ -24,8 +24,8 @@ extension ColorConverter on Color {
 
     return (
       hslColor.hue.round(),
-      (hslColor.saturation * maxPercentageValue).round(),
-      (hslColor.lightness * maxPercentageValue).round(),
+      (hslColor.saturation * _maxPercentageValue).round(),
+      (hslColor.lightness * _maxPercentageValue).round(),
     );
   }
 
@@ -38,7 +38,7 @@ extension ColorConverter on Color {
     final k = 1.0 - max(r, max(g, b));
 
     if (k == 1.0) {
-      return (0, 0, 0, maxPercentageValue);
+      return (0, 0, 0, _maxPercentageValue);
     }
 
     final c = (1.0 - r - k) / (1.0 - k);
@@ -46,16 +46,16 @@ extension ColorConverter on Color {
     final y = (1.0 - b - k) / (1.0 - k);
 
     return (
-      (c * maxPercentageValue).round(),
-      (m * maxPercentageValue).round(),
-      (y * maxPercentageValue).round(),
-      (k * maxPercentageValue).round(),
+      (c * _maxPercentageValue).round(),
+      (m * _maxPercentageValue).round(),
+      (y * _maxPercentageValue).round(),
+      (k * _maxPercentageValue).round(),
     );
   }
 
   /// Returns better contrasting color for the text
   Color getContrastColor() {
-    return computeLuminance() > colorContrastThreshold
+    return computeLuminance() > _colorContrastThreshold
         ? Colors.black
         : Colors.white;
   }
