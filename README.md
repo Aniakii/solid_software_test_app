@@ -14,4 +14,4 @@
 - Smooth transition between color changes
 - Adjusting text color to contrast background's color
 - Calculating color values to diffrent color systems (HSL and CMYK)
-- Displaying color values in three color system (RGB, HSL and CMYK) on the screen
+- Displaying color values in three color systems (RGB, HSL and CMYK) on the screen
