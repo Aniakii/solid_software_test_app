@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:solid_software_test_app/color_converter.dart';
 import 'package:solid_software_test_app/color_system_widget.dart';
 
-/// value of black color in RGB pallet
+/// Value of black color in RGB pallet
 const lowerBorderValue = 0xFF000000;
 
 /// 16 777 216 decimal value in hexadecimal system
@@ -16,9 +16,9 @@ void main() {
   runApp(const Main());
 }
 
-/// main class for the app
+/// Main class for the app
 class Main extends StatelessWidget {
-  /// constructor for the class
+  /// Constructor for the class
   const Main({super.key});
 
   @override
@@ -31,7 +31,7 @@ class Main extends StatelessWidget {
 
 /// Home screen of the app
 class MyHomePage extends StatefulWidget {
-  /// constructor for the class
+  /// Constructor for the class
   const MyHomePage({super.key});
 
   @override

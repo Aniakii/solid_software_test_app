@@ -2,15 +2,14 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 
-/// maximum value of single color in RGB system
+/// Maximum value of single color in RGB system
 const maxRGBValue = 255;
 
-/// value to normalize percentage numbers
+/// Value to normalize percentage numbers
 const maxPercentageValue = 100;
 
-/// threshold for choosing color for the displayed text
+/// Threshold for choosing color for the displayed text
 const colorContrastThreshold = 0.2;
-
 
 /// Class that handles converting color's values between different systems
 extension ColorConverter on Color {

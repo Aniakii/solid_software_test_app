@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 /// Widget to represent color values in a specific system
 class ColorSystemWidget extends StatelessWidget {
-  /// constructor for the widget
+  /// Constructor for the widget
   const ColorSystemWidget({
     required this.systemName,
     required this.textColor,
@@ -10,13 +10,13 @@ class ColorSystemWidget extends StatelessWidget {
     super.key,
   });
 
-  /// name of the represented system
+  /// Name of the represented system
   final String systemName;
 
-  /// color of the text
+  /// Color of the text
   final Color textColor;
 
-  /// names and values of elements in represented system
+  /// Names and values of elements in represented system
   final List<String> colorValues;
 
   @override
